@@ -134,14 +134,56 @@
   width: 90px;
 }
 
+.hero-slider {
+  width: 100%;
+  height: 420px;
+  background: #313638;
+  overflow: hidden;
+  position: relative;
+}
+.hero-slider .slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.hero-slider .slide {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+}
+.hero-slider .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-slider .slide.active {
+  opacity: 1;
+}
+.hero-slider .bullets {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+.hero-slider .bullets .bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #aaa;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.hero-slider .bullets .bullet.active {
+  background-color: #333;
+}
+
 .App {
   height: 100vh;
   width: 100vw;
   color: #313638;
-}
-
-.hero {
-  width: 100%;
-  height: 420px;
-  background: #313638;
 }/*# sourceMappingURL=style.css.map */
