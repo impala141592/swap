@@ -4,6 +4,7 @@ import "./assets/style/css/style.css";
 import TopBar from "./components/TopBar";
 import HeroSlider from "./components/HeroSlider";
 // import FeaturedProducts from "./components/FeaturedProducts";
+import UserProfile from "./components/user-profile";
 
 function App() {
   // console.log(JSON.stringify(tags, null, 2));
@@ -11,6 +12,7 @@ function App() {
     <div className="App">
       <TopBar />
       <HeroSlider />
+      <UserProfile />
       {/* <FeaturedProducts products={featuredProducts} /> */}
       {/* <HeroSlider /> */}
 
