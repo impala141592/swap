@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from "./assets/images/logo.svg";
+import "./assets/style/css/style.css";
+import { data, categories, featuredProducts, tags } from "./data";
+import TopBar from "./components/TopBar";
 
 function App() {
+  console.log(JSON.stringify(tags, null, 2));
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopBar />
+      <div className="hero">hero</div>
+      {/* <p>sdafsdfsdgsfg</p> */}
+      {/* <img className="logo" src={logo} alt="" /> */}
+
+      {/* {categories.map((product) => (
+        // <div className="product">{product.name}</div>
+      ))} */}
     </div>
   );
 }
