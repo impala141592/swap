@@ -23,6 +23,10 @@ const UserProfile = () => {
       {userProfile ? (
         <div>
           <p>Name: {userProfile.name}</p>
+          <img
+            src={`http://localhost:3001${userProfile.profilePicture}`}
+            alt="Profile"
+          />
           {/* Display other user profile information */}
         </div>
       ) : (
