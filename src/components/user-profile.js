@@ -7,7 +7,7 @@ const UserProfile = () => {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/api/user/1");
+        const response = await axios.get("/api/user/1");
         setUserProfile(response.data);
       } catch (error) {
         console.error("Error fetching user profile:", error);
@@ -23,10 +23,7 @@ const UserProfile = () => {
       {userProfile ? (
         <div>
           <p>Name: {userProfile.name}</p>
-          <img
-            src={`http://localhost:3001${userProfile.profilePicture}`}
-            alt="Profile"
-          />
+          <img src={userProfile.profilePicture} alt="Profile" />
           {/* Display other user profile information */}
         </div>
       ) : (
