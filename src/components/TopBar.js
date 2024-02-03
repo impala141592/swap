@@ -1,4 +1,4 @@
-import { useState, setState } from "react";
+import { useState } from "react";
 import logo from "../assets/images/logo-white.svg";
 
 const CategoriesButton = () => {

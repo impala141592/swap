@@ -1,15 +1,19 @@
 import React from "react";
 import "./assets/style/css/style.css";
-import { data, categories, featuredProducts, tags } from "./data";
+// import { data, categories, featuredProducts, tags } from "./data";
 import TopBar from "./components/TopBar";
-import Hero from "./components/HeroSlider";
+import HeroSlider from "./components/HeroSlider";
+// import FeaturedProducts from "./components/FeaturedProducts";
 
 function App() {
-  console.log(JSON.stringify(tags, null, 2));
+  // console.log(JSON.stringify(tags, null, 2));
   return (
     <div className="App">
       <TopBar />
-      <Hero />
+      <HeroSlider />
+      {/* <FeaturedProducts products={featuredProducts} /> */}
+      {/* <HeroSlider /> */}
+
       {/* <p>sdafsdfsdgsfg</p> */}
       {/* <img className="logo" src={logo} alt="" /> */}
 
